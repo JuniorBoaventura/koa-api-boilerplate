@@ -63,12 +63,12 @@ module.exports = {
     ],
 
     // Add the route to the routes.js file above the error route
-    actions: [
-        {
+    actions: (data) => {
+        return [{
             type: 'add',
             path: process.cwd() + '/src/models/{{camelCase name}}s.js',
             templateFile: './model/model.js.hbs',
             abortOnFail: true,
-        },
-    ],
+        }, ]
+    },
 }

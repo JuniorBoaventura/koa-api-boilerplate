@@ -24,10 +24,10 @@ const routePrompts = [
         message: 'Enter the path of the route. (module name will be the base url)',
         default: '/',
         validate: (value) => {
-            if (!(/\/.+/).test(value)) {
-                return 'invalide path : (/profile/:id or /test)'
+            if ((/\/.*/).test(value)) {
+                return true
             }
-            return true
+            return 'invalide path : (/profile/:id or /test)'
         },
     }, {
         type: 'input',
@@ -45,9 +45,9 @@ const routePrompts = [
         type: 'input',
         name: 'handler',
         message: 'Enter the handler name',
-        default: '/',
+        default: 'test',
         validate: (value) => {
-            if (!(/.+/).test(value)) {
+            if ((/.+/).test(value)) {
                 return true
             }
 

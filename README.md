@@ -163,7 +163,7 @@ KoaJS api boilerplate with generators to easly handle versionning &amp; avoid bo
 ## TODO:
 - Improve generators (generate CRUD module for a model, ...)
 - Implement Facebook & Google authentication
-- ...
+- Implement pre commit [linting](https://github.com/typicode/husky)
 
 ---
 

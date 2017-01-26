@@ -38,7 +38,7 @@ module.exports = {
             validate: (value) => {
                 if ((/.+/).test(value)) {
                     return moduleExists(value, version)
-                        ? 'A component or container with this name already exists'
+                        ? `A module with this name already exist ${version} ${value}`
                         : true
                 }
 
