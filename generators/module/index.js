@@ -56,7 +56,7 @@ module.exports = {
             message: 'Do you want parameters validation for some routes?',
         }, {
             type: 'recursive',
-            message: 'Do you want to add a ne route to the module?',
+            message: 'Do you want to add a new route to the module?',
             name: 'routes',
             prompts: routePrompts,
         },

@@ -18,7 +18,7 @@ const paramPrompts = [
             'Number',
             'Date',
             'Boolean',
-            'Objectid',
+            'ObjectId',
             'Array',
         ],
     },
