@@ -83,7 +83,7 @@ KoaJS api boilerplate with generators to easly handle versionning &amp; avoid bo
 
 ## List of generators:
 1. Version
-`npm run generate module`
+`npm run generate version`
 2. Module
 `npm run generate module`
 3. Route
